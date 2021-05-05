@@ -18,4 +18,4 @@ import { SharedModule } from '../shared/modules/shared/shared.module';
   ],
   declarations: [HomePage, CityDetailsComponent],
 })
-export class HomePageModule {}
+export class HomePageModule { }

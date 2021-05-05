@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController, ModalController } from '@ionic/angular';
-import { City } from 'src/domain/entities/city';
 import { Weather } from 'src/domain/entities/weather';
 import { UnavailableServiceError } from 'src/domain/errors/unavailable-service.error';
 import { LoadWeatherService } from 'src/domain/services/load-weather.service';
@@ -26,7 +25,7 @@ export class WeatherPage {
     private readonly activatedRoute: ActivatedRoute,
     private readonly weatherService: LoadWeatherService,
     private readonly loadingCtrl: LoadingController
-  ) {}
+  ) { }
 
   ionViewDidEnter() {
     this.cityId = Number.parseInt(

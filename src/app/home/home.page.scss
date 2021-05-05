@@ -25,3 +25,19 @@ ion-button {
   --box-shadow: none;
   width: 200px;
 }
+
+.geo-search {
+  position: absolute;
+  background-color: gray;
+  color: gray;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  top: 22px;
+  right: 27px;
+  mask-image: url(../../assets/map-pin.svg)
+}
+
+.geo-search:hover {
+  cursor: pointer;
+}
